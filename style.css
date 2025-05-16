@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color:wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img {
+    width: 18vw;
+    padding: 0 1.25vw;
+}
+.part2{
+      display: flex;
+      gap: 3vw;
+      padding: 0 1.5vw;
+}
+.part2 a{
+    text-decoration: none;
+    color: #704742;
+    font-size: 1.25vw;
+    font-weight: 800;
+}
+.part2 img {
+    display: none;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 10vh);
+    background-image: url(./saharadesertour_1-e1606936712182.jpeg);
+    display: flex;
+}
+.top{
+    width: 50%;
+    height: calc(100% - 10vh);
+    /* background-color: red; */
+   
+
+}
+.bottom{
+    width: 50%;
+    height: calc(100% - 10vh);
+     padding: 4vw 5vw;
+}
+.bottom h1{
+     color: #704742;
+     font-size: 8vw;
+     font-weight: 900;
+     letter-spacing: 2vw;
+}
+.bottom h2{
+       width: 85%;
+       color: rgb(231, 153, 6);
+       line-height:1.75vw ;
+       font-size: 1.5vw;
+       font-weight: 200;
+       word-spacing: 0.5vw;
+}
+.bottom button{
+        width: 7vw;
+        height: 3vw;
+        background-color: #9E1946;
+        margin-top: 1.5vw;
+        font-size: 1vw;
+        font-weight: 500;
+        color:wheat;
+}
+.tours{
+    border-top:5px solid black ;
+    width: 100%;
+    height: 47.5vw;
+    display: grid;
+    background-image: url(./Sahara-Desert-sunset.webp);
+    background-position: top;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr  ;
+    gap: 2vw;
+}
+.ele1 ,.ele2 ,.ele3 ,.ele4{
+   place-items: center;
+   margin-top: 2vw;
+   padding: 2vw 7vw;
+    margin: 2vw 2vw;
+    border-radius: 2vw ;
+    box-shadow:2px 2px 2px 2px ;
+} 
+.ele1{
+    background-image: url(./white-desert-landscape-in-Egypt-2.webp);
+    background-size: cover;
+}
+.ele2{
+    background-image: url(./Siwa-Oasis-Tours-Shali-Fortress-Siwa.webp);
+    background-size: cover;
+}
+.ele3{
+    background-image: url(./Wadi-Al-Hitan-Valley-of-Whales-Dorudon-Atrox-Whale-Photo-by-Christoph-Rohner.webp);
+    background-size: cover;
+}
+.ele4{
+    background-image: url(./Date-palms-in-Fayoum-Oasis-Sahara.webp);
+    background-size: cover;
+}
+.tours h1{
+    color: #9E1946;
+    
+}
+.tours img{
+    border-radius: 2vw ;
+    height: 50vh;
+    width: 35vw;
+    box-shadow: 2px 2px 2px 2px ;
+} 
+@media (max-width:600px) {
+     .nav{
+        width: 100%;
+        height: 8vh;
+        background-color: wheat;
+     }
+     .nav img {
+        width: 35vw;
+     }
+     .nav a{
+        display: none;
+     }
+     .part2 img {
+    display: block;
+    width: 7.5vw;
+    height: 4vh;
+}
+.part2 img :hover{
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.top{
+    display: none;
+}
+.bottom{
+      
+}
+.bottom h1{
+    font-size: 15vh;
+}
+.bottom h2{
+    font-size: 3vh;
+    line-height: 4vh;
+}
+.bottom button{
+    width: 18vw;
+    height: 8vh;
+    font-size:2vh;
+    font-weight: 800;
+    margin-top: 2.5vh;
+    letter-spacing: 0.5vw;
+}
+.tours{
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+}
+.ele1 ,.ele2,.ele3,.ele4{
+    background-position: center;
+    height: 31.5vh;
+    display: flex;
+    place-items: end;
+}
+
+}
